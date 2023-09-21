@@ -10,13 +10,13 @@ generator db {
 model Game {
 	id        String   @id
 	players   DateTime @default(now())
-	started   Boolean @default(false)
+	started   Boolean  @default(false)
 }
 
 model Round {
-	id      String @default(cuid()) @id
-	prompts String[]
-	code    String[]
+	id       String @default(cuid()) @id
+	prompts  String[]
+	code     String[]
 	language String
 }
 

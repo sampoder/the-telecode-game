@@ -12,4 +12,4 @@ Someone else tries to create a prompt for that code.
 
 And the cycle continues.
 
-At the end of the cycle, the inital prompt and the final code is shown. 
+At the end of the cycle, the initial prompt and the final code is shown. 
