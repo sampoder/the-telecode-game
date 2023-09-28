@@ -68,7 +68,7 @@ func addRoomForm() *tview.Form {
 
 	form.AddInputField("Code", "", 20, nil, func(code string) {
 		room.code = code
-	})
+	}).SetFieldBackgroundColor(tcell.ColorGray)
 
 	form.AddButton("Save", func() {
 		room.createdAt = time.Now().Format(time.RFC3339)
