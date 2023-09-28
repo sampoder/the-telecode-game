@@ -9,14 +9,16 @@ generator db {
  
 model Game {
 	id        String   @id
-	players   DateTime @default(now())
+	players   Player[]
+	createdAt DateTime @default(now())
 	started   Boolean  @default(false)
+	public    Boolean  @default(false)
 }
 
 model Round {
 	id       String @default(cuid()) @id
-	prompts  String[]
 	code     String[]
+	exampleInput    String
 	language String
 }
 
